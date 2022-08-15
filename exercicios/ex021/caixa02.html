@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: dimgray;
+      margin: 0px;
+    }
+
+    header{
+      background-color: azure;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    nav{
+      background-color: rgba(117, 117, 117, 0.836);
+      padding: 4px;
+      box-shadow: 4px 4px 6px rgb(0 0 0 / 36%);
+    }
+
+    nav > a{
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    nav > a:hover{
+      text-decoration: underline;
+    }
+
+    main{
+      background-color: azure;
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.411);
+    }
+
+    article{
+      background-color: bisque;
+      padding: 5px;
+      margin: 10px 5px;
+      border-radius: 20px 0px;
+    }
+
+    h2{
+      padding-left: 10px;
+    }
+
+    article > p{
+      padding: 10px;
+    }
+
+    article > aside{
+      background-color: rgb(199, 178, 153);
+    }
+
+    footer{
+      background-color: gray;
+      text-align: center;
+      padding: 6px;
+    }
+
+    footer > p{
+      margin: 0;
+    }
+
+    #bola{
+      height: 200px;
+      width: 200px;
+      background-color: blueviolet;
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <nav>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+  </header>
+  <main>
+    <section id="assuntos">
+
+    </section>
+    <section id="noticias">
+      <article>
+        <h2>Notícia sobre o VSCode</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut possimus magni delectus porro sint architecto enim quo vitae quod ratione cumque odio doloribus, officia nostrum. Nostrum cum porro magni placeat.</p>
+        <aside>Artigo escrito por Felipe Silva</aside>
+      </article>
+      <article>
+        <h2>Notícias sobre o GitHub</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam! Voluptates ab, error illum molestias sequi pariatur repellendus aliquid optio assumenda repudiandae quae. At sequi ut vitae animi dolor atque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae corrupti possimus aperiam quo ullam tenetur, doloremque consequatur tempora delectus obcaecati optio voluptate distinctio commodi sint maxime, nulla, repellendus voluptatum cupiditate?</p>
+        <aside>Artigo escrito por Marcos Sousa</aside>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por João Souza</p>
+  </footer>
+  <div id="bola"></div>
+</body>
+</html>
