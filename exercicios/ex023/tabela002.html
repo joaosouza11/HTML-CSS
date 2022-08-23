@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela Grande</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      width: 450px;
+      border-collapse: collapse;
+      position: relative;
+    }
+
+    caption {
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    thead, tfoot {
+      background-color: rgb(112, 111, 111);
+      color: white;
+    }
+
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: rgb(112, 111, 111);;
+    }
+
+    tr {
+      height: 50px;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    td.num {
+      text-align: right;
+    }
+
+    tbody > tr:nth-child(2n) /*ou (odd/even)*/ {
+      background-color: rgba(128, 128, 128, 0.301);
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Tabela Grande</h1>
+    <!--
+      Anatomia de Tabelas Grandes
+      -Table
+        -Caption
+        -THead
+          -TR, TD, TH
+        -TBody
+          -TR, TD, TH
+        -TFoot
+          -TR, TD, TH
+    -->
+    <table>
+      <caption>População das Unidades Federativas</caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 175px;">População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira Estado São Paulo"> <!--Teste-->
+            São Paulo
+          </td>
+          <td class="num">46 649 132</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="Bandeira Estado Minas Gerais"> <!--Teste-->
+            Minas Gerais
+          </td>
+          <td class="num">21 411 923</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="Bandeira Estado Rio de Janeiro"> <!--Teste-->
+            Rio de Janeiro
+          </td>
+          <td class="num">17 463 349</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="Bandeira Estado Bahia">
+            Bahia
+          </td>
+          <td class="num">14 985 284</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paraná.svg/20px-Bandeira_do_Paraná.svg.png" alt="Bandeira Estado Paraná">
+            Paraná
+          </td>
+          <td class="num">11 597 484</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="Bandeira Estado Rio Grande do Sul">
+            Rio Grande do Sul
+          </td>
+          <td class="num">11 466 630	</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="Bandeira Estado Pernambuco">
+            Pernambuco
+          </td>
+          <td class="num">9 674 793</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Ceará.svg/20px-Bandeira_do_Ceará.svg.png" alt="Bandeira Estado Ceará">
+            Ceará
+          </td>
+          <td class="num">9 240 580	</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Pará.svg/20px-Bandeira_do_Pará.svg.png" alt="Bandeira Estado Pará">
+            Pará
+          </td>
+          <td class="num">8 777 124</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="Bandeira Estado Santa Catarina">
+            Santa Catarina
+          </td>
+          <td class="num">7 338 473</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goiás.svg/20px-Flag_of_Goiás.svg.png" alt="Bandeira Estado Goiás">
+            Goiás
+          </td>
+          <td class="num">7 206 589</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranhão.svg/20px-Bandeira_do_Maranhão.svg.png" alt="Bandeira Estado Maranhão">
+            Maranhão
+          </td>
+          <td class="num">7 153 262</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt="Bandeira Estado Amazonas">
+            Amazonas
+          </td>
+          <td class="num">4 269 995</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Espírito_Santo.svg/20px-Bandeira_do_Espírito_Santo.svg.png" alt="Bandeira Estado Espírito Santo">
+            Espírito Santo
+          </td>
+          <td class="num">4 108 508</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Paraíba.svg/20px-Bandeira_da_Paraíba.svg.png" alt="Bandeira Estado Paraíba">
+            Paraíba
+          </td>
+          <td class="num">4 059 905</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total de Habitantes</th>
+          <td class="num"><strong>100 509 688</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+</body>
+</html>
