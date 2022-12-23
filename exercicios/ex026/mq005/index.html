@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsivo</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+  <header>
+    <h1>Media Queries</h1>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    <menu id="itens">
+      <ul>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 2</a></li>
+        <li><a href="#">Opção 3</a></li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <article>
+      <h2>Penguin</h2>
+      <p>Penguins are a group of aquatic flightless birds. They live almost exclusively in the Southern Hemisphere: only one species, the Galápagos penguin, is found north of the Equator. Highly adapted for life in the water, penguins have countershaded dark and white plumage and flippers for swimming. Most penguins feed on krill, fish, squid and other forms of sea life which they catch with their bills and swallow it whole while swimming. A penguin has a spiny tongue and powerful jaws to grip slippery prey.</p>
+
+      <p>They spend roughly half of their lives on land and the other half in the sea.</p>
+
+      <p>The largest living species is the emperor penguin (Aptenodytes forsteri): on average, adults are about 1.1 m tall and weigh 35 kg. The smallest penguin species is the little blue penguin (Eudyptula minor), also known as the fairy penguin, which stands around 30-33 cm tall and weighs 1.2 kg.Today, larger penguins generally inhabit colder regions, and smaller penguins inhabit regions with temperate or tropical climates. Some prehistoric penguin species were enormous: as tall or heavy as an adult human. There was a great diversity of species in subantarctic regions, and at least one giant species in a region around 2,000 km south of the equator 35 mya, during the Late Eocene, a climate decidedly warmer than today.</p>
+    </article>
+  </main>
+
+  <script>
+    function clickMenu() {
+      if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+      } else {
+        itens.style.display = 'block'
+      }
+    }
+  </script>
+</body>
+</html>
